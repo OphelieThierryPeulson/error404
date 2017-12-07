@@ -1,84 +1,36 @@
-ErrorDocument XXX /dossier/page_personnalisee.html
-ErrorDocument 404 /erreur404.php
-
-ErrorDocument 300 /
-ErrorDocument 301 /
-ErrorDocument 302 /
-ErrorDocument 304 /
-ErrorDocument 305 /
-ErrorDocument 307 /
-ErrorDocument 310 /
-
-3xx   Redirection
-300 	Multiple Choices 	L'URL demandée se rapporte à plusieurs ressources
-301 	Moved Permanently 	Document déplacé de façon permanente
-302 	Found 	Document déplacé de façon temporaire
-303 	See Other 	La réponse à cette requête est ailleurs
-304 	Not Modified 	Document non modifié depuis la dernière requête
-305 	Use Proxy 	La requête doit être ré-adressée au proxy
-307 	Temporary Redirect 	La requête doit être redirigée temporairement vers l'URL spécifiée
-310 	Too many Redirect 	La requête doit être redirigée de trop nombreuse fois, ou est victime d'une boucle de redirection.
-
-ErrorDocument 400 /
-ErrorDocument 401 /
-ErrorDocument 402 /
-ErrorDocument 403 /
-ErrorDocument 404 /
-ErrorDocument 405 /
-ErrorDocument 406 /
-ErrorDocument 407 /
-ErrorDocument 408 /
-ErrorDocument 409 /
-ErrorDocument 410 /
-ErrorDocument 411 /
-ErrorDocument 412 /
-ErrorDocument 413 /
-ErrorDocument 415 /
-ErrorDocument 416 /
-ErrorDocument 417 /
-ErrorDocument 22 /
-ErrorDocument 423 /
-ErrorDocument 449 /
-ErrorDocument 450 /
-
-4xx   Erreur du client
-400 	Bad Request 	La syntaxe de la requête est erronée
-401 	Unauthorized 	Une authentification est nécessaire pour accéder à la ressource
-402 	Payment Required 	Paiement requis pour accéder à la ressource (non utilisé)
-403 	Forbidden 	L'authentification est refusée. Contrairement à l'erreur 401, aucune demande d'authentification ne sera faite
-404 	Not Found 	Document non trouvé (URL incorrecte ou fichier qui n'existe pas)
-405 	Method Not Allowed 	Méthode de requête non autorisée
-406 	Not Acceptable 	Toutes les réponses possibles seront refusées.
-407 	Proxy Authentication Required 	Accès à la ressource autorisé par identification avec le proxy
-408 	Request Time-out 	Temps d'attente d'une réponse du serveur écoulé
-409 	Conflict 	La requête ne peut être traitée à l'état actuel
-410 	Gone 	La ressource est indisponible et aucune adresse de redirection n'est connue
-411 	Length Required 	La longueur de la requête n'a pas été précisée
-412 	Precondition Failed 	Préconditions envoyées par la requête non-vérifiées
-413 	Request Entity Too Large 	Traitement abandonné dû à une requête trop importante
-415 	Unsupported Media Type 	Format de requête non-supportée pour une méthode et une ressource données
-416 	Requested range unsatisfiable 	Champs d'en-tête de requête 'range' incorrect.
-417 	Expectation failed 	Comportement attendu et défini dans l'en-tête de la requête insatisfaisable
-22 	Unprocessable entity 	WebDAV : L'entité fournie avec la requête est incompréhensible ou incomplète.
-423 	Locked 	WebDAV : L'opération ne peut avoir lieu car la ressource est verrouillée.
-449 	Retry With 	Code défini par Microsoft. La requête devrait être renvoyée après avoir effectué une action.
-450 	Blocked by Windows Parental Controls 	Code défini par Microsoft. Cette erreur est produite lorsque les outils de contrôle parental de Windows sont activés et bloquent l'accès à la page.
-
-ErrorDocument 500 /
-ErrorDocument 501 /
-ErrorDocument 502 /
-ErrorDocument 503 /
-ErrorDocument 504 /
-ErrorDocument 505 /
-ErrorDocument 507 /
-ErrorDocument 509 /
-
-5xx   Erreur du serveur
-500 	Internal Server Error 	Erreur interne du serveur (due très probablement à trop de requêtes simultanées sur le même serveur)
-501 	Not Implemented 	Fonctionnalité réclamée non supportée par le serveur
-502 	Bad Gateway ou Proxy Error 	Mauvaise réponse envoyée à un serveur intermédiaire par un autre serveur.
-503 	Service Unavailable 	Service temporairement indisponible ou en maintenance
-504 	Gateway Time-out 	Temps d'attente d'une réponse d'un serveur à un serveur intermédiaire écoulé
-505 	HTTP Version not supported 	Version HTTP non gérée par le serveur
-507 	Insufficient storage 	WebDAV : Espace insuffisant pour modifier les propriétés ou construire la collection
-509 	Bandwidth Limit Exceeded 	Utilisé par de nombreux serveurs pour indiquer un dépassement de quota.
+ErrorDocument 300 /error.html
+ErrorDocument 301 /error.html
+ErrorDocument 302 /error.html
+ErrorDocument 304 /error.html
+ErrorDocument 305 /error.html
+ErrorDocument 307 /error.html
+ErrorDocument 310 /error.html
+ErrorDocument 400 /error.html
+ErrorDocument 401 /error.html
+ErrorDocument 402 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html
+ErrorDocument 405 /error.html
+ErrorDocument 406 /error.html
+ErrorDocument 407 /error.html
+ErrorDocument 408 /error.html
+ErrorDocument 409 /error.html
+ErrorDocument 410 /error.html
+ErrorDocument 411 /error.html
+ErrorDocument 412 /error.html
+ErrorDocument 413 /error.html
+ErrorDocument 415 /error.html
+ErrorDocument 416 /error.html
+ErrorDocument 417 /error.html
+ErrorDocument 22 /error.html
+ErrorDocument 423 /error.html
+ErrorDocument 449 /error.html
+ErrorDocument 450 /error.html
+ErrorDocument 500 /error.html
+ErrorDocument 501 /error.html
+ErrorDocument 502 /error.html
+ErrorDocument 503 /error.html
+ErrorDocument 504 /error.html
+ErrorDocument 505 /error.html
+ErrorDocument 507 /error.html
+ErrorDocument 509 /error.html
